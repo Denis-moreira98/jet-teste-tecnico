@@ -3,13 +3,13 @@ import { IoMdCloseCircle } from "react-icons/io";
 
 export function LabelStatus({ status }: { status: boolean }) {
    return (
-      <div
-         className={`font-medium p-2 rounded-md flex max-w-[85px] text-center ${
-            status ? "text-green-800 bg-green-200" : "text-gray-900 bg-red-400"
+      <label
+         className={`font-medium p-[5px] flex justify-center rounded-md max-w-[97px] ${
+            status ? "text-green-900 bg-green-200" : "text-red-900 bg-red-300"
          }`}
       >
-         {status ? "Available" : "Blocked"}
-      </div>
+         {status ? "Available" : "Unavailable"}
+      </label>
    );
 }
 export function LabelStatusMobile({ status }: { status: boolean }) {
