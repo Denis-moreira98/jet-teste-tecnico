@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import { CarItem } from "@/components/carItem";
+import { CarItemMobile } from "@/components/carItemMobile";
 import { Container } from "@/components/container";
 
 export default function Home() {
@@ -31,6 +32,17 @@ export default function Home() {
                   <CarItem />
                   <CarItem />
                   <CarItem />
+               </tbody>
+            </table>
+
+            <table className="w-full flex flex-col items-center justify-center sm:hidden">
+               <tbody className="w-full">
+                  <CarItemMobile />
+                  <CarItemMobile />
+                  <CarItemMobile />
+                  <CarItemMobile />
+                  <CarItemMobile />
+                  <CarItemMobile />
                </tbody>
             </table>
          </main>

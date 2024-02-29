@@ -13,9 +13,10 @@ export function CarItem() {
                   <Image
                      src={carImg}
                      alt="car"
-                     width={50}
-                     height={25}
+                     width={0}
+                     height={0}
                      quality={100}
+                     className="w-14 h-auto"
                   />
                   <p>Mini Cooper 2020</p>
                </div>
