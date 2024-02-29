@@ -12,15 +12,16 @@ export function CarItemMobile({ car }: { car: CarProps }) {
                <td className="pl-3">
                   <Image
                      src={car.image}
-                     width={90}
-                     height={65}
+                     width={0}
+                     height={0}
                      alt={car.model}
+                     className="max-h-[100px] w-[100px]"
                   />
                </td>
             </div>
             <div className="flex flex-col">
-               <td className="font-semibold text-gray-900 mb-2">{car.model}</td>
-               <td className="text-xs font-medium text-gray-500 mb-2">
+               <td className="font-semibold text-gray-900 mb-1">{car.model}</td>
+               <td className="text-xs font-medium text-gray-500 mb-">
                   Next reservation: {car.date}
                </td>
 
