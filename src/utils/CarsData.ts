@@ -1,5 +1,5 @@
 import image1 from "@/assets/bmw1.jpg";
-import image2 from "@/assets/car.png";
+import image2 from "@/assets/lamborghini-huracan.webp";
 import image3 from "@/assets/chevrolet-camaro.jpg";
 import image4 from "@/assets/compass.jpg";
 import image5 from "@/assets/ferrari-roma.jpg";
@@ -15,16 +15,16 @@ export const carsData = [
       date1: "Jul 06 - Jul 12",
       date: "06/07",
       status: true,
-      rating: 4,
+      rating: 3,
    },
    {
       id: 2,
-      model: "Mini Cooper 2020",
+      model: "Lamborghini 2023",
       image: image2,
       date1: "Ago 6 - Ago 15",
       date: "06/08",
       status: false,
-      rating: 2,
+      rating: 5,
    },
    {
       id: 3,
@@ -33,7 +33,7 @@ export const carsData = [
       date1: "Out 10 - Out 15",
       date: "10/10",
       status: true,
-      rating: 4,
+      rating: 3,
    },
    {
       id: 4,
