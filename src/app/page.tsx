@@ -3,6 +3,8 @@ import { CarItem } from "@/components/carItem";
 import { CarItemMobile } from "@/components/carItemMobile";
 import { Container } from "@/components/container";
 
+import { carsData } from "@/utils/CarsData";
+
 export default function Home() {
    return (
       <Container>
@@ -26,23 +28,17 @@ export default function Home() {
                   </tr>
                </thead>
                <tbody>
-                  <CarItem />
-                  <CarItem />
-                  <CarItem />
-                  <CarItem />
-                  <CarItem />
-                  <CarItem />
+                  {carsData.map((car) => (
+                     <CarItem key={car.id} car={car} />
+                  ))}
                </tbody>
             </table>
 
             <table className="w-full flex flex-col items-center justify-center sm:hidden">
                <tbody className="w-full">
-                  <CarItemMobile />
-                  <CarItemMobile />
-                  <CarItemMobile />
-                  <CarItemMobile />
-                  <CarItemMobile />
-                  <CarItemMobile />
+                  {carsData.map((car) => (
+                     <CarItemMobile key={car.id} car={car} />
+                  ))}
                </tbody>
             </table>
          </main>
