@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
-import { IoIosCloseCircle } from "react-icons/io";
+import { IoMdCloseCircle } from "react-icons/io";
 
 export function LabelStatus({ status }: { status: boolean }) {
    return (
@@ -12,14 +12,13 @@ export function LabelStatus({ status }: { status: boolean }) {
       </div>
    );
 }
-
 export function LabelStatusMobile({ status }: { status: boolean }) {
    return (
       <div>
          {status ? (
             <FaCheckCircle size={21} color="green" />
          ) : (
-            <IoIosCloseCircle size={21} color="#ff6060" />
+            <IoMdCloseCircle size={21} color="#ff6060" />
          )}
       </div>
    );
